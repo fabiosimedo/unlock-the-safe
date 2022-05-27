@@ -1,0 +1,1 @@
+# Rascunho de site paa descobrir senha de cofre
