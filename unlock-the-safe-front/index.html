@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="main.js" defer></script>
+
+  <title>Unlock the Vault</title>
+  <link rel="icon" type="image/x-icon" href="/img/vault-icon.jpg">
+</head>
+<body>
+  <div class="container">
+    <h1 class="neonText">
+          Unlock the safe...
+    </h1>
+    <h2 class="neonText">Gess the password!</h2> 
+    <div class="video">
+      <video width="400">
+        <source src="img/myVault.mp4" type="video/mp4">
+        <source src="img/movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+      <div class="result">
+        <span class="ps-1">X</span>
+        <span class="ps-2">X</span>
+        <span class="ps-3">X</span>
+        <span class="ps-4">X</span>
+        <span class="ps-5">X</span>
+      </div>
+    </div>
+    <div class="form-password">
+      <div class="buttons">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>0</button>  
+        <form method="POST">
+          <input type="hidden" name="clientTry" value="" id="hidden_input">
+          <input type="submit" value="Enviar">
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

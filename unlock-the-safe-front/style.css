@@ -1,0 +1,166 @@
+.neonText {
+  animation: flicker 1.5s infinite alternate;
+  color: #fff;
+}
+
+.neonText2 {
+  animation: flicker2 1.5s infinite alternate;
+  color: rgb(246, 244, 244);
+  padding: 4.5rem 5rem;
+}
+
+.neonText2-background {
+  animation: flicker-bg 1.5s infinite alternate;
+  color: #fff;
+  background-image: url('img/greenbg.webp');
+}
+
+/* Flickering animation */
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #0fa,
+      0 0 80px #0fa,
+      0 0 90px #0fa,
+      0 0 100px #0fa,
+      0 0 150px #0fa;
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
+@keyframes flicker2 {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px rgb(45, 152, 43),
+      0 0 80px rgb(45, 152, 43),
+      0 0 90px rgb(45, 152, 43),
+      0 0 100px rgb(45, 152, 43),
+      0 0 150px rgb(45, 152, 43);
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
+@keyframes flicker-bg {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      box-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px rgb(45, 152, 43),
+      0 0 80px rgb(45, 152, 43),
+      0 0 90px rgb(45, 152, 43),
+      0 0 100px rgb(45, 152, 43),
+      0 0 150px rgb(45, 152, 43);
+  
+  }
+  
+  20%, 24%, 55% {        
+      box-shadow: none;
+  }    
+}
+
+
+/* Additional styling */
+  
+h2 {
+ font-size: 1.8rem;
+}
+.container {
+  margin-top: 8vh;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #010a01;
+}  
+
+h1, h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+div.video, div.form-password{
+  display: flex;
+  justify-content: center;
+}
+
+div.form-password div.buttons{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto auto auto;
+  margin-top: 2rem;
+}
+
+div.buttons button{
+  border-radius: .3rem;
+  outline: none;
+  font-size: 2rem;
+  font-weight: bolder;
+  background-color: #0fa;
+  background-image: url('img/inputBg.jpg');
+  color:rgba(255, 255, 255, 0.825);
+  opacity:0.6;
+  border: solid red .01rem;
+  text-shadow: 2px 2px 5px red;
+  transition: opacity, text-shadow .7s;
+  padding: .5rem 1rem;
+}
+
+div.buttons button:hover{
+  opacity: 10;
+  cursor: pointer;
+  text-shadow: 1px 2px 5px rgb(246, 243, 243);
+}
+
+div.buttons form {
+  grid-column: 2/4;
+}
+
+input[type="submit"]{
+  font-size: 1.4rem;
+  padding: .3rem .3rem .3rem .6rem;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.63);
+  font-weight: bolder;
+  border-radius: .3rem;
+  border: solid #fff .01rem;
+  padding: .8rem 1.5rem;
+  transition: opacity, text-shadow, box-shadow .7s;
+}
+
+input[type="submit"]:hover{
+  opacity: 10;
+  cursor: pointer;
+  text-shadow: 1px 1px 3px rgba(246, 243, 243, 0.514);
+  box-shadow: -.5px -.5px 2px 3px rgb(129, 35, 35);
+}
+
+div.result{
+  position: absolute;
+  color: white;
+  margin-top: 12.4rem; 
+  font-size: xx-large; 
+}
+
